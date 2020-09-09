@@ -77,7 +77,7 @@ function! ale#fix#ApplyFixes(buffer, output) abort
             call remove(g:ale_fix_buffer_data, a:buffer)
 
             if !l:data.ignore_file_changed_errors
-                execute 'echoerr ''The file was changed before fixing finished'''
+                "execute 'echoerr ''The file was changed before fixing finished'''
             endif
 
             return
